@@ -16,13 +16,29 @@
     <script src="https://kit.fontawesome.com/979a960ce3.js" crossorigin="anonymous"></script>
     <!--Custom Style Css  -->
     <link href="./css/style.css" rel="stylesheet">
+    <script>
+        function openMenu() {
+            document.getElementById("side-menu").style.display = "block"
+            document.getElementById("menu-btn").style.display = "none"
+            document.getElementById("close-btn").style.display = "block"
+        }
+
+        function closeMenu() {
+            document.getElementById("side-menu").style.display = "none"
+            document.getElementById("menu-btn").style.display = "block"
+            document.getElementById("close-btn").style.display = "none"
+        }
+    </script>
 
 </head>
+
 
 <body>
     <!-- -------------------NAV-BAR----------------------- -->
     <div class="top-nav-bar">
         <div class="search-box">
+            <i class="fa-solid fa-bars" id="menu-btn" onclick="openMenu()"></i>
+            <i class="fa-solid fa-times" id="close-btn" onclick="closeMenu()"></i>
             <img src="./imgs/logo-1.png" class="logo">
             <input type="text" class="form-control">
             <span class="input-group-text"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
@@ -37,7 +53,7 @@
     </div>
     <!-- ---------------------SIDE-MENUE------------------- -->
     <section class="header">
-        <div class="side-menu">
+        <div class="side-menu" id="side-menu">
             <ul>
                 <li>Onsale <i class="fa-solid fa-angle-right"></i>
                     <ul>
@@ -60,6 +76,41 @@
                         <li>Sub-Menu-3</li>
                     </ul>
                 </li>
+                <li>magazines <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                    </ul>
+                </li>
+                <li>books <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                    </ul>
+                </li>
+                <li>clothes <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                    </ul>
+                </li>
+                <li>jewellery <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                    </ul>
+                </li>
+                <li>movies <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                        <li>Sub-Menu-3</li>
+                    </ul>
+                </li>
             </ul>
 
         </div>
@@ -67,5 +118,6 @@
     </section>
 
 </body>
+
 
 </html>
