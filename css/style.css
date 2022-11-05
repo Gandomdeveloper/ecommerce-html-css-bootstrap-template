@@ -248,7 +248,7 @@ body {
 }
 
 .title-box h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 5px;
 }
 
@@ -326,4 +326,26 @@ body {
 
 .new-products {
     margin: 50px 0;
+}
+
+
+/* Website features css */
+
+.website-features {
+    margin: 60px 0;
+}
+
+.website-features img {
+    width: 20%;
+}
+
+.feature-box {
+    padding-top: 20px;
+}
+
+.feature-text {
+    width: 30%;
+    margin-top: 10px;
+    float: right;
+    padding-left: 20px;
 }
