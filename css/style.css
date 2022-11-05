@@ -349,3 +349,46 @@ body {
     float: right;
     padding-left: 20px;
 }
+
+
+/* Footer css */
+
+.footer {
+    margin-top: 50px;
+    background: #000;
+    color: #fff;
+}
+
+.footer h1 {
+    font-size: 15px;
+    margin: 25px;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.fa-brands {
+    margin-right: 5px;
+}
+
+.copyright {
+    margin-bottom: -80px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.copyright .fa-heart {
+    color: #d80cb9;
+    font-size: 15px;
+}
+
+.footer hr {
+    margin-top: 10px;
+    background-color: #ccc;
+}
+
+.footer-img img {
+    width: 150px;
+}
