@@ -380,7 +380,7 @@ body {
 }
 
 .copyright .fa-heart {
-    color: #d80cb9;
+    color: red;
     font-size: 15px;
 }
 
@@ -391,4 +391,67 @@ body {
 
 .footer-img img {
     width: 150px;
+}
+
+
+/* SINGLE PRODUCT CSS */
+
+.single-product {
+    margin-top: 50px 0;
+}
+
+.new-arrival {
+    background-color: #f3dc0c;
+    width: 50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.col-md-7 h2 {
+    color: #555;
+}
+
+.single-product .fa-solid {
+    color: #f3dc0c;
+}
+
+.single-product .price {
+    color: #d80cb9;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.single-product input {
+    width: 30px;
+    text-align: center;
+    border: solid 1px #ccc;
+    height: 33px;
+}
+
+.single-product .btn-primary {
+    background: #d80cb9;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    box-shadow: none !important;
+    margin-left: 20px;
+}
+
+
+/* product-decription css */
+
+.product-decription h6 {
+    margin-top: 50px;
+    color: #d80cb9;
+}
+
+.product-decription p {
+    margin-top: 30px;
+}
+
+.product-decription hr {
+    margin-bottom: 50px;
 }
