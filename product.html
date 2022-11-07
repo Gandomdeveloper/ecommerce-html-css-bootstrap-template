@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Redux Online Shop</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <!-- Google font -->
+    <link href='https://cdn.fontcdn.ir/Font/Persian/Lotus/Lotus.css' rel='stylesheet' type='text/css'>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/979a960ce3.js" crossorigin="anonymous"></script>
+    <!--Custom Style Css  -->
+    <link href="./css/style.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <!-- -------------------NAV-BAR----------------------- -->
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa-solid fa-bars" id="menu-btn" onclick="openMenu()"></i>
+            <i class="fa-solid fa-times" id="close-btn" onclick="closeMenu()"></i>
+            <a href="index.html"><img src="./imgs/logo-1.png" class="logo"></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-basket-shopping"></i>Cart</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ----------------SINGLE-PRODUCT ---------------------- -->
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="slider">
+                        <div id="product-slider" class=" carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./imgs/jewellery.jpg" class="d-block">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imgs/laptop-2.jpg" class="d-block">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imgs/manto.jpg" class="d-block">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#product-slider" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#product-slider" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-7">
+                    <p class="new-arrival text-center">NEW</p>
+                    <h2>iedji uiuieude due edui8e</h2>
+                    <p>Product Code</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p class="price">USD $15.00</p>
+                    <p><b>Availablity:</b>In stock</p>
+                    <p><b>Cindition:</b>New</p>
+                    <p><b>Brand:</b>XYZ</p>
+                    <label>Quantity</label>
+                    <input type="text" value="1">
+                    <button type="button" class="btn btn-primary">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------- PRODUCT-DESCRIPTION --------------------- -->
+    <section class="product-decription">
+        <div class="container">
+            <h6>Product Descriptin</h6>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="title-box">
+                <h2>Similare</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./imgs/jewellery.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="quick-shop">
+                                <i class="fa-solid fa-eye"></i>
+                                </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Whishlist">
+                                    <i class="fa-solid fa-heart"></i>
+                                    </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Cart">
+                                        <i class="fa-solid fa-shopping-cart"></i>
+                                        </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <h3>Ring</h3>
+                        <h5>$29000</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./imgs/manto.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="quick-shop">
+                                <i class="fa-solid fa-eye"></i>
+                                </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Whishlist">
+                                    <i class="fa-solid fa-heart"></i>
+                                    </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Cart">
+                                        <i class="fa-solid fa-shopping-cart"></i>
+                                        </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <h3>Ring</h3>
+                        <h5>$29000</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./imgs/jewellery.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="quick-shop">
+                                <i class="fa-solid fa-eye"></i>
+                                </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Whishlist">
+                                    <i class="fa-solid fa-heart"></i>
+                                    </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Cart">
+                                        <i class="fa-solid fa-shopping-cart"></i>
+                                        </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <h3>Ring</h3>
+                        <h5>$29000</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./imgs/laptop-2.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="quick-shop">
+                                <i class="fa-solid fa-eye"></i>
+                                </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Whishlist">
+                                    <i class="fa-solid fa-heart"></i>
+                                    </button>
+                            <button type="button" class="btn btn-secondary" title="Add To Cart">
+                                        <i class="fa-solid fa-shopping-cart"></i>
+                                        </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <h3>Ring</h3>
+                        <h5>$29000</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------- FOOTER ----------------- -->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful links</h1>
+                    <p>Privacy-policy</p>
+                    <p>Terme of use</p>
+                    <p>Return policy</p>
+                    <p>Discount coupon</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About us</p>
+                    <p>Contact us</p>
+                    <p>career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow us on </h1>
+                    <p><i class="fa-brands fa-square-facebook"></i>Facebook</p>
+                    <p><i class="fa-brands fa-linkedin"></i> Linkedin</p>
+                    <p><i class="fa-brands fa-twitter"></i>Twitter</p>
+                    <p><i class="fa-brands fa-youtube"></i>Youtube</p>
+                </div>
+                <div class="col-md-3 footer-img">
+                    <h1>Download App </h1>
+                    <img src="./imgs/app-download.jpg" />
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa-regular fa-heart"></i> Gandom </p>
+        </div>
+    </section>
+
+
+
+
+</body>
+<script>
+    function openMenu() {
+        document.getElementById("side-menu").style.display = "block"
+        document.getElementById("menu-btn").style.display = "none"
+        document.getElementById("close-btn").style.display = "block"
+    }
+
+    function closeMenu() {
+        document.getElementById("side-menu").style.display = "none"
+        document.getElementById("menu-btn").style.display = "block"
+        document.getElementById("close-btn").style.display = "none"
+    }
+</script>
+
+
+</html>
