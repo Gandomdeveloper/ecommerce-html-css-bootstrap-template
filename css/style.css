@@ -608,7 +608,7 @@ button {
     white-space: nowrap;
 }
 
-.card {
+.menu-bar .card {
     width: 18rem;
     height: 20rem;
     overflow: scroll;
@@ -623,11 +623,11 @@ button {
     z-index: 20;
 }
 
-.card ul li {
+.menu-bar .card ul li {
     background-color: #fff;
 }
 
-.card a {
+.menu-bar .card a {
     align-items: center;
 }
 
